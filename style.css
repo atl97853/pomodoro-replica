@@ -1,0 +1,35 @@
+/* GENERAL STYLES */
+
+body {
+    background-color: rgb(186, 73, 73);
+    color: white;
+}
+
+/* header section  */
+div > .header-image{
+    width: 10px;
+}
+.left-container > .header-title {
+    font-weight: 800;
+}
+
+.header-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 5px;
+    border: none;
+
+    /* testing */
+    padding: 5px;
+    width: 100px;
+}
+
+:hover.header-button {
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+li > .profile-image {
+    width: 50px;
+}
+
+/* counter section  */
