@@ -16,7 +16,7 @@ div > .header-image{
 .header-button {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    border-radius: 5px;
+    border-radius: 2px;
     border: none;
 
     /* testing */
@@ -32,4 +32,73 @@ li > .profile-image {
     width: 50px;
 }
 
+hr {
+
+}
+
 /* counter section  */
+
+.counter-container {
+    background-color: rgb(186, 73, 73);
+    color: white;
+}
+
+:hover.counter-header > div{
+    /* testing */
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.counter-container > .counter-countdown {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+div > .counter-button {
+    background-color: white;
+    color:  rgb(186, 73, 73);
+    border-radius: 2px;
+    border: none;
+
+    width: 80px;
+    padding: 5px;
+}
+
+/* flexbox sort containers */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header section */
+hr {
+    width: 100%;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.left-container {
+    display: flex;
+    gap: 2px;
+    justify-content: space-around;
+}
+
+.header > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-container, ul {
+    flex: 1;
+}
