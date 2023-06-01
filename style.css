@@ -64,6 +64,10 @@ hr {
     padding: 5px;
 }
 
+:hover.counter-button > button {
+    background-color: rgb(255, 255, 255, .6);
+}
+
 /* flexbox sort containers */
 
 body {
@@ -107,6 +111,7 @@ hr {
 .counter-header {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 .counter-countdown {
