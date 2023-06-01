@@ -54,7 +54,7 @@ hr {
     font-weight: 800;
 }
 
-div > .counter-button {
+.counter-button > button {
     background-color: white;
     color:  rgb(186, 73, 73);
     border-radius: 2px;
@@ -101,4 +101,25 @@ hr {
 
 .left-container, ul {
     flex: 1;
+}
+
+/* counter container flex */
+.counter-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.counter-countdown {
+    text-align: center;
+}
+
+.counter-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* footer container flex and align items */
+.footer-container {
+    text-align: center;
+    margin: 10px;
 }
