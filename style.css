@@ -4,40 +4,52 @@
     --red-transparent-dark: rgba(0, 0, 0, 0.1);
     --white: rgb(255, 255, 255);
 }
-/* GENERAL STYLES */
-
+/* general style */
 body {
-    background-color: rgb(186, 73, 73);
-    color: white;
+    background-color: var(--red);
+    color: var(--white);
 }
-
 /* header section  */
-div > .header-image{
-    width: 10px;
+h1 { 
+    font-family: 'ArialRounded', 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif, ' Apple Color Emoji', ' Segoe UI Emoji', ' Segoe UI Symbol';
+    font-size: 20px;
 }
-.left-container > .header-title {
-    font-weight: 800;
+.header-link-container {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 0px;
+    color: var(--white);
+    text-decoration: none;
 }
-
+.header-image{
+    width: 20px;
+    margin-right: 4px;
+}
+.header-title {
+    display: block;
+    padding: 10px 0px;
+    font-weight: 20px;
+    cursor: pointer;
+}
 .header-button {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    border-radius: 2px;
+    padding: 8px 12px;
+    margin-left: 10px;
+    min-width: 70px;
+    background-color: var(--red-transparent);
+    color: var(--white);
+    font-size: 13px;
+    border-radius: 4px;
     border: none;
-
-    /* testing */
-    padding: 5px;
-    width: 100px;
+    cursor: pointer;
+    opacity: 0.9;
 }
-
 :hover.header-button {
     background-color:rgba(255, 255, 255, 0.5);
 }
-
-li > .profile-image {
+.profile-image {
     width: 50px;
+    cursor: pointer;
 }
-
 hr {
 
 }
