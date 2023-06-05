@@ -3,15 +3,29 @@
     --red-transparent: rgba(255, 255, 255, 0.1);
     --red-transparent-dark: rgba(0, 0, 0, 0.1);
     --white: rgb(255, 255, 255);
+    --white-transparent:none rgba(0, 0, 0, 0.15);
+    --font-family: 
+        'ArialRounded',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica',
+        'Arial',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol';
 }
 /* general style */
 body {
+    margin: 0;
     background-color: var(--red);
     color: var(--white);
+    font-family: var(--font-family);
+    font-weight: 300;
+    position: relative;
 }
 /* header section  */
 h1 { 
-    font-family: 'ArialRounded', 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif, ' Apple Color Emoji', ' Segoe UI Emoji', ' Segoe UI Symbol';
     font-size: 20px;
 }
 .header-link-container {
@@ -50,40 +64,99 @@ h1 {
     width: 50px;
     cursor: pointer;
 }
-hr {
-
+.unknow-div {  /* needs js to work properly */
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 100px;
+    /* transform: translateY(-1px); */
+    width: 50%;
 }
 
 /* counter section  */
-
 .counter-container {
-    background-color: rgb(186, 73, 73);
-    color: white;
+    padding: 20px 0px 30px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--red-transparent);
 }
-
-:hover.counter-header > div{
-    /* testing */
-    font-weight: 700;
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
-.counter-container > .counter-countdown {
-    font-size: 80px;
-    font-weight: 800;
-}
-
-.counter-button > button {
-    background-color: white;
-    color:  rgb(186, 73, 73);
-    border-radius: 2px;
+.counter-header > button {
+    height: 28px;
+    padding: 2px 12px;
+    margin: 0px;
+    background-color: var(--white-transparent);
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 300;
     border: none;
-
-    width: 80px;
-    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: none;
 }
-
-:hover.counter-button > button {
+:hover.counter-button-pomodoro,
+:hover.counter-button-shortBreak,
+:hover.counter-button-longBreak
+{ /* just temporarily needs js to work properly*/
+    border: none;
+    margin: 0px;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    padding: 2px 12px;
+    height: 28px;
+    cursor: pointer;
+    background: var(--red-transparent-dark);
+    box-shadow: none;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+}
+.counter-countdown {
+    margin-top: 20px;
+    font-size: 120px;
+    font-weight: bold;
+}
+.counter-button-start {
+    text-align: center;
+    width: 200px;
+    height: 55px;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    font-family: var(--font-family);
+    font-size: 22px;
+    font-weight: bold;
+    background-color: var(--white);
+    color: var(--red);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translateY(6px);
+    box-shadow: none;
+    transition: color 0.5s ease-in-out 0s;
+}
+:hover.counter-button-start {
     background-color: rgb(255, 255, 255, .6);
+}
+.counter-button-next {
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    border: none;
+    width: 28px;
+    height: 28px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.2s ease-in-out 0s;
+}
+.counter-button-next > img {
+    width: 22px;
+    opacity: 0.9;
+    /* overflow-clip-margin: content-box; */
+    /* overflow: clip; */
 }
 
 /* flexbox sort containers */
