@@ -12,27 +12,32 @@
   <body>
     <!-- header section-->
     <div class="header-container">
-      <div class="header-left-container">
-        <div><img class="header-image" src="./images/icon-check.png" alt="icon-check"/></div>
-        <div class="header-title">Pomofocus</div>
-      </div>
+      <h1>
+        <a class="header-link-container" href="./index.html">
+          <img class="header-image" src="./images/icon-check.png" alt="icon-check"/>
+          <div class="header-title">Pomofocus</div>
+        </a>
+      </h1>
       <div class="header-right-container">
         <span><button class="header-button report-button">Report</button></span>
         <span><button class="header-button settings-button">Settings</button></span>
         <span><img class="profile-image" src="./images/raccoon.jpg" alt="profile-image"/></span>
       </div>
 
-      <hr />
+      <div class="unknow-div"></div> <!-- needs js to work properly -->
 
     <!-- counter section -->
     <div class="counter-container">
       <div class="counter-header">
-        <span>Pomodoro</span>
-        <span>Short Break</span>
-        <span>Long Break</span>
+        <button class="counter-button-pomodoro">Pomodoro</button>
+        <button class="counter-button-shortBreak">Short Break</button>
+        <button class="counter-button-longBreak">Long Break</button>
       </div>
       <div class="counter-countdown">25:00</div>
-      <div class="counter-button"><button>START</button></div>
+      <div class="counter-button">
+        <button class="counter-button-start">START</button>
+        <button class="counter-button-next"><img src="./images/next-button-pomodoro.png" alt="next.png"></button>
+      </div>
     </div>
 
     <!-- score counter -->
@@ -43,7 +48,7 @@
 
     <!-- taks container -->
     <div class="taks-container">
-      <div class="taks-container-1">
+      <div class="taks-container-1"> 
         <div>Taks</div>
         <button></button>
       </div>
